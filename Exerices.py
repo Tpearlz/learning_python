@@ -27,6 +27,8 @@ print("\nNew age after birthday:", age)
 city = "Toronto"
 print("New city:", city)
 
-
+# 3. Using Variables in Expressions
+year_born = 2025 - age
+print("\nYear born:", year_born)
 
 
