@@ -10,6 +10,15 @@ print("Age:", age)
 print("Height:", height)
 print("Is student:", is_student)
 
+# Task 1: Create variables for your city (string), number of kids (int), and has_pet (boolean)
+city = "Vancouver"
+num_kids = 0
+has_pet = False
+
+print("\nYour city:", city)
+print("Number of kids:", num_kids)
+print("Has pet:", has_pet)
+
 
 
 
