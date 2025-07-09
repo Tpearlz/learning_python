@@ -37,3 +37,8 @@ kids_age_in_5_years = num_kids + 5
 # Assuming num_kids is the total number, change logic as needed
 print("Kids' age in 5 years (assuming starting age = num_kids):", kids_age_in_5_years)
 
+# 4. Data Types Check
+print("\nType of name:", type(name))
+print("Type of age:", type(age))
+print("Type of height:", type(height))
+print("Type of is_student:", type(is_student))
