@@ -25,6 +25,14 @@ index_cherry = fruits.index("cherry")
 fruits[index_cherry] = "pineapple"
 print("After changing 'cherry' to 'pineapple':", fruits)
 
+#5. Removing Items
+fruits.remove("apple")        # Removes first occurrence of "apple"
+popped_fruit = fruits.pop()    # Removes first occurrence of "apple"
+print("After removing 'apple' and popping last item:", fruits)
+print("Popped fruit:", popped_fruit)
+
+
+
 
 
 
