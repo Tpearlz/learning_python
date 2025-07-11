@@ -15,7 +15,15 @@ print("Last fruit:", fruits[-1])
 # Print the second and third fruits using slicing
 print("Second and third fruits:", fruits[1:3])
 
+#3. Modifying Elements
+fruits[1] = "blueberry"
+# Changing banana to blueberry
+print("After modification:", fruits)
 
+#Change "cherry" to "pineapple"
+index_cherry = fruits.index("cherry")
+fruits[index_cherry] = "pineapple"
+print("After changing 'cherry' to 'pineapple':", fruits)
 
 
 
