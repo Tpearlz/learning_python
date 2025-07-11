@@ -31,6 +31,9 @@ popped_fruit = fruits.pop()    # Removes first occurrence of "apple"
 print("After removing 'apple' and popping last item:", fruits)
 print("Popped fruit:", popped_fruit)
 
+# ✅ Task 5: Remove "mango" and print the list
+fruits.remove("mango")
+print("After removing 'mango':", fruits)
 
 
 
