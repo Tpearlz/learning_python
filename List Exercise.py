@@ -47,6 +47,19 @@ sorted_reversed = sorted(fruits, reverse=True)
 print("Reverse-sorted (new list):", sorted_reversed)
 print("Original list remains:", fruits)
 
+#7. Iterating Over a List
+print("Fruits one by one:")
+for fruit in fruits:
+    print("Fruit:", fruit)
+
+# Print each fruit in uppercase
+print("Fruits in uppercase:")
+for fruit in fruits:
+    print(fruit.upper())
+
+
+
+
 
 
 
