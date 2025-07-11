@@ -41,3 +41,31 @@ print("After updating Student 2's Subject 1 score:", scores)
 scores[4][1] = 82
 print("After updating Student 5's Subject 2 score:", scores)
 
+#6. Calculating Averages
+print("Average score per student:")
+for i, student_scores in enumerate(scores):
+    avg = sum(student_scores) / len(student_scores)
+    print(f"Student {i+1} average: {round(avg, 2)}")
+
+#Print subject-wise average (column-wise average)
+print("Average score per subject:")
+num_subjects = len(scores[0])
+num_students = len(scores)
+
+for subj in range(num_subjects):
+    total = sum(scores[student][subj] for student in range(num_students))
+    avg = total / num_students
+    print(f"Subject {subj+1} average: {round(avg, 2)}")
+
+#7. Flattening a List of Lists into a Single List
+all_scores = [score for student in scores for score in student]
+print("All scores flattened:", all_scores)
+
+# Find the highest score among all students
+highest = max(all_scores)
+print("Highest score among all students:", highest)
+
+
+
+
+
