@@ -35,6 +35,18 @@ print("Popped fruit:", popped_fruit)
 fruits.remove("mango")
 print("After removing 'mango':", fruits)
 
+#6. Sorting and Reversing
+fruits.sort()
+print("Sorted list:", fruits)
+
+fruits.reverse()
+print("Reversed list:", fruits)
+
+# Sort in reverse alphabetical order without changing original list
+sorted_reversed = sorted(fruits, reverse=True)
+print("Reverse-sorted (new list):", sorted_reversed)
+print("Original list remains:", fruits)
+
 
 
 
