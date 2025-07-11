@@ -55,3 +55,11 @@ print("Numbers from 1 to 10 (step 2):", list(range(1, 11, 2)))
 # Print numbers from 10 to 1 using range
 print("Countdown from 10:", list(range(10, 0, -1)))
 
+#8. abs() - Returns absolute value (no negative sign)
+print("Absolute value of -50:", abs(-50))
+
+# Print absolute value of -12.5
+print("Absolute of -12.5:", abs(-12.5))
+
+
+
