@@ -6,3 +6,9 @@ scores = [
     [90, 91, 95]    # Student 3
 ]
 print("Initial scores:", scores)
+
+#2. Accessing Elements
+print("Score of Student 1 in Subject 2:", scores[0][1])  # 92
+
+#Print score of Student 3 in Subject 3
+print("Student 3, Subject 3:", scores[2][2])
