@@ -21,3 +21,12 @@ print("Min number:", min(numbers))
 # Use max() to find the highest fruit name alphabetically
 print("Alphabetically highest fruit:", max(fruits))
 
+#4. sorted() - Returns a sorted copy (does NOT change original list)
+sorted_fruits = sorted(fruits)
+print("Sorted fruits:", sorted_fruits)
+print("Original fruits list remains:", fruits)
+
+# Sort the fruits in reverse alphabetical order
+print("Reverse sorted fruits:", sorted(fruits, reverse=True))
+
+
