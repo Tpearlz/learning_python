@@ -32,4 +32,12 @@ print("After adding Student 4:", scores)
 scores.append([70, 80, 90])
 print("After adding Student 5:", scores)
 
+#5. Updating a Value
+# Let's update Student 2's score in Subject 1 to 95
+scores[1][0] = 95
+print("After updating Student 2's Subject 1 score:", scores)
+
+# Change Student 5's Subject 2 score to 82
+scores[4][1] = 82
+print("After updating Student 5's Subject 2 score:", scores)
 
