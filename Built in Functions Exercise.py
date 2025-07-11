@@ -40,5 +40,12 @@ print("Type of y:", type(y))
 print("Type of 'Hello':", type("Hello"))
 print("Type of 3.14:", type(3.14))
 
+# 6. round() - Rounds a float to nearest integer or given decimal places
+num = 3.14159
+print("Rounded (default):", round(num))
+print("Rounded to 2 decimals:", round(num, 2))
+
+# Round 7.8567 to 1 decimal place
+print("Rounded 7.8567 to 1 decimal:", round(7.8567, 1))
 
 
