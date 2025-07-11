@@ -57,6 +57,31 @@ print("Fruits in uppercase:")
 for fruit in fruits:
     print(fruit.upper())
 
+#8. List Comprehension
+fruit_lengths = [len(fruit) for fruit in fruits]
+print("Lengths of each fruit name:", fruit_lengths)
+
+# New list with fruits containing the letter 'e'
+fruits_with_e = [fruit for fruit in fruits if 'e' in fruit]
+print("Fruits with 'e':", fruits_with_e)
+
+#Given a list of prices, write a function to apply a discount
+prices = [20, 30, 50, 100, 80]
+
+def discount_prices(prices, discount):
+    """Apply a discount % to each price and return a new list."""
+    discounted = [round(price * (1 - discount/100), 2) for price in prices]
+    return discounted
+
+# Test the function
+discounted_10 = discount_prices(prices, 10)
+print("Original prices:", prices)
+print("Prices after 10% discount:", discounted_10)
+
+# Try changing the discount to 25% and print again
+discounted_25 = discount_prices(prices, 25)
+print("Prices after 25% discount:", discounted_25)
+
 
 
 
