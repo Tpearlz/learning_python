@@ -14,3 +14,10 @@ print("Sum of numbers:", total)
 # Use sum() to find the total of [5, 15, 25, 35]
 print("Sum of [5, 15, 25, 35]:", sum([5, 15, 25, 35]))
 
+#3. max() and min() - Find the largest and smallest values
+print("Max number:", max(numbers))
+print("Min number:", min(numbers))
+
+# Use max() to find the highest fruit name alphabetically
+print("Alphabetically highest fruit:", max(fruits))
+
