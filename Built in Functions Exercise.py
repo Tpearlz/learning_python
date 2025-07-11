@@ -29,4 +29,16 @@ print("Original fruits list remains:", fruits)
 # Sort the fruits in reverse alphabetical order
 print("Reverse sorted fruits:", sorted(fruits, reverse=True))
 
+#5 type() - Find the data type of a variable
+x = 100
+print("Type of x:", type(x))
+
+y = [1, 2, 3]
+print("Type of y:", type(y))
+
+# Print the type of "Hello" and 3.14
+print("Type of 'Hello':", type("Hello"))
+print("Type of 3.14:", type(3.14))
+
+
 
