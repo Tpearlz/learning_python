@@ -48,4 +48,10 @@ print("Rounded to 2 decimals:", round(num, 2))
 # Round 7.8567 to 1 decimal place
 print("Rounded 7.8567 to 1 decimal:", round(7.8567, 1))
 
+#7. range() - Generates a sequence of numbers
+print("Numbers from 0 to 4:", list(range(5)))
+print("Numbers from 1 to 10 (step 2):", list(range(1, 11, 2)))
+
+# Print numbers from 10 to 1 using range
+print("Countdown from 10:", list(range(10, 0, -1)))
 
