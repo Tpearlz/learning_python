@@ -20,3 +20,19 @@ greet_user("Tolu")
 # Call `greet_user()` with your own name
 greet_user("Tolu")
 
+#3. Function with Multiple Parameters
+
+def add_numbers(a, b):
+    result = a + b
+    print(f"The sum of {a} and {b} is {result}")
+
+add_numbers(10, 5)
+
+#Modify `add_numbers` to subtract numbers instead
+
+def subtract_numbers(a, b):
+    result = a - b
+    print(f"The difference between {a} and {b} is {result}")
+
+subtract_numbers(20, 7)
+
