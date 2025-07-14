@@ -69,3 +69,24 @@ def introduce(name, age=25):
 
 introduce("Subir")
 introduce("Tanni", 18)
+
+#6. Using Functions in a Loop
+
+def square(num):
+    return num * num
+
+numbers = [1, 2, 3, 4, 5]
+squares = []
+
+for n in numbers:
+    squares.append(square(n))
+
+print("Squares of the numbers:", squares)
+
+#Write a function `is_even(num)` and use it to filter even numbers from a list
+
+def is_even(num):
+    return num % 2 == 0
+
+even_numbers = [n for n in numbers if is_even(n)]
+print("Even numbers:", even_numbers)
