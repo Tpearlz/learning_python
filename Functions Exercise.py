@@ -36,3 +36,20 @@ def subtract_numbers(a, b):
 
 subtract_numbers(20, 7)
 
+#4. Function That Returns a Value
+
+def multiply(a, b):
+    return a * b
+
+product = multiply(6, 7)
+print("Product is:", product)
+
+#Create a function `divide(a, b)` that returns the result
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Cannot divide by zero"
+    return a / b
+
+print("Division result:", divide(10, 2))
+print("Division result (zero):", divide(10, 0))
