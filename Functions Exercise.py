@@ -53,3 +53,19 @@ def divide(a, b):
 
 print("Division result:", divide(10, 2))
 print("Division result (zero):", divide(10, 0))
+
+#5. Function with Default Parameters
+
+def greet_city(name, city="Vancouver"):
+    print(f"{name} lives in {city}")
+
+greet_city("Ankita")
+greet_city("Rose", "Toronto")
+
+#Create a function `introduce(name, age=25)` that prints: "My name is ___ and I am ___ years old."
+
+def introduce(name, age=25):
+    print(f"My name is {name} and I am {age} years old.")
+
+introduce("Subir")
+introduce("Tanni", 18)
