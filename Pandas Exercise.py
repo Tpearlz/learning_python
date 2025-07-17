@@ -65,6 +65,11 @@ print("\nSorted by Years:\n", df.sort_values('Years'))
 df.set_index('Name', inplace=True)
 print("\nSet Name as index:\n", df)
 
+#8. Working with Dates
+# Add a fake date column for example
+df['Date'] = pd.to_datetime(['2023-01-01', '2023-02-01', '2023-03-01'])
+df['Year'] = df['Date'].dt.year
+print("\nAdded Date and Year columns:\n", df)
 
 
 
