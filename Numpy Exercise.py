@@ -67,3 +67,9 @@ data = np.array([10, 20, 30, 40, 50])
 mask = data > 30
 print("Mask:", mask)
 print("Filtered Data:", data[mask])
+
+# 10. Random Numbers
+print("Random float [0,1):\n", np.random.rand(2, 3))
+print("Standard normal:\n", np.random.randn(3))
+print("Random integers:\n", np.random.randint(1, 10, 5))
+
