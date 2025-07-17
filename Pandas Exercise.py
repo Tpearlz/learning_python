@@ -79,5 +79,11 @@ df2 = pd.DataFrame({'ID': [1, 2], 'Salary': [70000, 80000]})
 merged_df = pd.merge(df1, df2, on='ID')
 print("\nMerged DataFrame:\n", merged_df)
 
+#10. Applying Functions
+df.reset_index(inplace=True)  # Reset index to access Name as column again
+df['Years_plus_5'] = df['Years'].apply(lambda x: x + 5)
+print("\nApplied function to Years column:\n", df[['Name', 'Years', 'Years_plus_5']])
+
+
 
 
