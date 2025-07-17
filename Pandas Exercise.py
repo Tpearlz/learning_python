@@ -60,5 +60,12 @@ print("\nSalary by Name:\n", df.groupby('Name')['Salary'].sum())
 #Mean salary
 print("\nAverage Salary:", df['Salary'].mean())
 
+#7. Sorting and Indexing
+print("\nSorted by Years:\n", df.sort_values('Years'))
+df.set_index('Name', inplace=True)
+print("\nSet Name as index:\n", df)
+
+
+
 
 
