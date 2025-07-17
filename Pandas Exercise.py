@@ -84,6 +84,18 @@ df.reset_index(inplace=True)  # Reset index to access Name as column again
 df['Years_plus_5'] = df['Years'].apply(lambda x: x + 5)
 print("\nApplied function to Years column:\n", df[['Name', 'Years', 'Years_plus_5']])
 
+# Example: End-to-End Mini Project
+# Simulated example if 'employees.csv' existed
+
+# Uncomment and use when 'employees.csv' is available:
+# df = pd.read_csv('employees.csv')
+# high_earners = df[df['Salary'] > 75000]
+# df['Tax'] = df['Salary'] * 0.3
+# department_stats = df.groupby('Department')['Salary'].mean()
+# print("\nDepartment Stats:\n", department_stats)
+
+# Tutorial Complete
+print("\n✅ pandas tutorial completed!")
 
 
 
