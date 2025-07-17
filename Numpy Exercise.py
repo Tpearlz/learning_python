@@ -51,3 +51,14 @@ m1 = np.array([[1, 2], [3, 4]])
 m2 = np.array([[2, 0], [1, 3]])
 product = np.dot(m1, m2)
 print("Matrix Product:\n", product)
+
+# 8. Aggregate Functions
+stats = np.array([[5, 10, 15], [20, 25, 30]])
+print("Sum:", stats.sum())
+print("Mean:", stats.mean())
+print("Std Dev:", stats.std())
+print("Min:", stats.min())
+print("Max:", stats.max())
+print("Column-wise sum:", stats.sum(axis=0))
+print("Row-wise sum:", stats.sum(axis=1))
+
