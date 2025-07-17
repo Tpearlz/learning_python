@@ -67,7 +67,7 @@ greet_city("Rose", "Toronto")
 def introduce(name, age=25):
     print(f"My name is {name} and I am {age} years old.")
 
-introduce("Subir")
+introduce("Tolu")
 introduce("Tanni", 18)
 
 #6. Using Functions in a Loop
