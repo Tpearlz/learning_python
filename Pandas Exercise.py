@@ -71,6 +71,13 @@ df['Date'] = pd.to_datetime(['2023-01-01', '2023-02-01', '2023-03-01'])
 df['Year'] = df['Date'].dt.year
 print("\nAdded Date and Year columns:\n", df)
 
+#9. Merging and Joining
+df1 = pd.DataFrame({'ID': [1, 2], 'Name': ['Alice', 'Bob']})
+df2 = pd.DataFrame({'ID': [1, 2], 'Salary': [70000, 80000]})
+
+# Merge on ID
+merged_df = pd.merge(df1, df2, on='ID')
+print("\nMerged DataFrame:\n", merged_df)
 
 
 
