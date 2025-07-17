@@ -62,3 +62,8 @@ print("Max:", stats.max())
 print("Column-wise sum:", stats.sum(axis=0))
 print("Row-wise sum:", stats.sum(axis=1))
 
+# 9. Boolean Filtering
+data = np.array([10, 20, 30, 40, 50])
+mask = data > 30
+print("Mask:", mask)
+print("Filtered Data:", data[mask])
