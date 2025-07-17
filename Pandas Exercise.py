@@ -37,3 +37,8 @@ print("\nName column:\n", df['Name'])
 print("\nName & Age columns:\n", df[['Name', 'Age']])
 print("\nRow by index (iloc):\n", df.iloc[0])
 print("\nRow by label (loc):\n", df.loc[0])
+
+#4. Filtering and Conditional Selection
+print("\nPeople older than 30:\n", df[df['Age'] > 30])
+print("\nPeople named Alice:\n", df[df['Name'] == 'Alice'])
+
