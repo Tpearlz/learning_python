@@ -77,3 +77,26 @@ print("Random integers:\n", np.random.randint(1, 10, 5))
 print("Unique:", np.unique([1, 2, 2, 3, 3, 3]))
 print("Sorted:", np.sort([5, 3, 1, 2]))
 print("Clipped (0 to 5):", np.clip([1, 5, 10], 0, 5))
+
+# 12. Mini Project: Student Score Analysis
+# Simulate test scores for 5 students across 3 tests
+scores = np.array([
+    [88, 92, 85],
+    [78, 81, 79],
+    [90, 87, 88],
+    [69, 72, 70],
+    [95, 94, 96]
+])
+
+# Average score per student (row-wise)
+student_avg = scores.mean(axis=1)
+
+# Average score per test (column-wise)
+test_avg = scores.mean(axis=0)
+
+# Find students with average > 85
+high_performers = scores[student_avg > 85]
+
+print("Student Averages:", student_avg)
+print("Test Averages:", test_avg)
+print("High Performing Students:\n", high_performers)
