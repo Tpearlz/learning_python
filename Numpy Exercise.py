@@ -36,3 +36,12 @@ matrix = np.array([[10, 20, 30], [40, 50, 60]])
 print("Element at row 1, col 2:", matrix[1, 2])
 print("Second column:", matrix[:, 1])
 print("Submatrix (rows 0-1, cols 1-2):\n", matrix[0:2, 1:3])
+
+# 6. Element-wise Operations
+x = np.array([1, 2, 3])
+y = np.array([4, 5, 6])
+print("Add:", x + y)
+print("Multiply:", x * y)
+print("Square root:", np.sqrt(x))
+print("Exponential:", np.exp(x))
+print("Log:", np.log(x))
