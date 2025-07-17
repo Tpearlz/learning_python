@@ -73,3 +73,7 @@ print("Random float [0,1):\n", np.random.rand(2, 3))
 print("Standard normal:\n", np.random.randn(3))
 print("Random integers:\n", np.random.randint(1, 10, 5))
 
+# 11. Useful Functions
+print("Unique:", np.unique([1, 2, 2, 3, 3, 3]))
+print("Sorted:", np.sort([5, 3, 1, 2]))
+print("Clipped (0 to 5):", np.clip([1, 5, 10], 0, 5))
