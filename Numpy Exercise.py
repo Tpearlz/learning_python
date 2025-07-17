@@ -30,3 +30,9 @@ arr = np.arange(1, 7)
 reshaped = arr.reshape((2, 3))
 print("Reshaped 2x3:\n", reshaped)
 print("Flattened:", reshaped.flatten())
+
+# 5. Indexing & Slicing
+matrix = np.array([[10, 20, 30], [40, 50, 60]])
+print("Element at row 1, col 2:", matrix[1, 2])
+print("Second column:", matrix[:, 1])
+print("Submatrix (rows 0-1, cols 1-2):\n", matrix[0:2, 1:3])
