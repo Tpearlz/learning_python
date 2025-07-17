@@ -15,3 +15,10 @@ data = {
 }
 df = pd.DataFrame(data)
 print("\nDataFrame:\n", df)
+
+# 2. Reading and Writing Files
+# Reading CSV
+# df = pd.read_csv('your_file.csv')  # Uncomment when file is available
+
+# Writing CSV
+# df.to_csv('output.csv', index=False)  # Uncomment to save file
