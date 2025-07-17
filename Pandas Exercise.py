@@ -42,7 +42,7 @@ print("\nRow by label (loc):\n", df.loc[0])
 print("\nPeople older than 30:\n", df[df['Age'] > 30])
 print("\nPeople named Alice:\n", df[df['Name'] == 'Alice'])
 
-# 🧹 5. Data Cleaning
+#5. Data Cleaning
 # Handling Missing Data
 print("\nCheck missing:\n", df.isnull())
 # df.dropna()              # Drop missing rows
@@ -52,5 +52,13 @@ print("\nCheck missing:\n", df.isnull())
 # Renaming Columns
 df.rename(columns={'Age': 'Years'}, inplace=True)
 print("\nRenamed column:\n", df.head())
+
+#6. Data Aggregation
+#Group by and sum
+print("\nSalary by Name:\n", df.groupby('Name')['Salary'].sum())
+
+#Mean salary
+print("\nAverage Salary:", df['Salary'].mean())
+
 
 
