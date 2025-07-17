@@ -16,3 +16,11 @@ print("Dimensions:", a.ndim)
 print("Data type:", a.dtype)
 print("Total elements:", a.size)
 
+# 3. Special Arrays
+print("Zeros:\n", np.zeros((2, 3)))
+print("Ones:\n", np.ones((3, 3)))
+print("Full with 7s:\n", np.full((2, 2), 7))
+print("Identity Matrix:\n", np.eye(3))
+print("Range with step:\n", np.arange(0, 10, 2))
+print("Evenly spaced:\n", np.linspace(0, 1, 5))
+
