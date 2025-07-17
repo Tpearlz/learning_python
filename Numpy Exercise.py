@@ -45,3 +45,9 @@ print("Multiply:", x * y)
 print("Square root:", np.sqrt(x))
 print("Exponential:", np.exp(x))
 print("Log:", np.log(x))
+
+# 7. Matrix Multiplication
+m1 = np.array([[1, 2], [3, 4]])
+m2 = np.array([[2, 0], [1, 3]])
+product = np.dot(m1, m2)
+print("Matrix Product:\n", product)
