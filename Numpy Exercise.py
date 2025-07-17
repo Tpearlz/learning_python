@@ -24,3 +24,9 @@ print("Identity Matrix:\n", np.eye(3))
 print("Range with step:\n", np.arange(0, 10, 2))
 print("Evenly spaced:\n", np.linspace(0, 1, 5))
 
+
+# 4. Reshaping & Flattening
+arr = np.arange(1, 7)
+reshaped = arr.reshape((2, 3))
+print("Reshaped 2x3:\n", reshaped)
+print("Flattened:", reshaped.flatten())
