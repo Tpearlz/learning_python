@@ -72,7 +72,7 @@ for idx in sorted_indices[:5]:
 # 11. Export the original dataset with computed P/E as CSV
 print("\n11. Exporting to sp100_with_pe.csv")
 with open('sp100_with_pe.csv', 'w', newline='') as f:
-    =writer = csv.writer(f)
+=writer = csv.writer(f)
 writer.writerow(['Name', 'Sector', 'Price', 'EPS', 'P/E'])
 for row, pe in zip(data, pe_ratios):
     writer.writerow([row['Name'], row['Sector'], row['Price'], row['EPS'], round(pe, 2)])
