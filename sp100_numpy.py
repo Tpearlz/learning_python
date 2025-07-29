@@ -71,11 +71,17 @@ for idx in sorted_indices[:5]:
 
 # 11. Export the original dataset with computed P/E as CSV
 print("\n11. Exporting to sp100_with_pe.csv")
+
+# Assuming `data` is a list of dictionaries and `pe_ratios` is a list of P/E values
 with open('sp100_with_pe.csv', 'w', newline='') as f:
-=writer = csv.writer(f)
-writer.writerow(['Name', 'Sector', 'Price', 'EPS', 'P/E'])
-for row, pe in zip(data, pe_ratios):
-    writer.writerow([row['Name'], row['Sector'], row['Price'], row['EPS'], round(pe, 2)])
+    writer = csv.writer(f)
+
+    # Writing the header row
+    writer.writerow(['Name', 'Sector', 'Price', 'EPS', 'P/E'])
+
+    # Writing the data rows
+    for row, pe in zip(data, pe_ratios):
+        writer.writerow([row['Name'], row['Sector'], row['Price'], row['EPS'], round(pe, 2)])
 
 # 12. Plot sector-wise average P/E as a bar chart
 print("\n12. Sector-wise Average P/E Bar Chart")
