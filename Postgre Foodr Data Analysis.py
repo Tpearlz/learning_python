@@ -93,7 +93,7 @@ def main():
             print("\n✅ Task 5: Revenue trend (last 10 days):")
             print(daily_revenue.tail(10))
 
-        except SQLAlchemyError as e:
+    except SQLAlchemyError as e:
         print(f"❌ Database error: {e}")
     except Exception as e:
         print(f"❌ An error occurred: {e}")
