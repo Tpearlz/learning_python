@@ -46,3 +46,10 @@ portfolio_returns['Portfolio'] = portfolio_returns.dot(weights)
 
 # Compounding the return over time gives cumulative return
 cumulative_returns = (1 + portfolio_returns).cumprod()
+
+# Plotting cumulative return
+cumulative_returns['Portfolio'].plot(title='Portfolio Cumulative Return')
+plt.xlabel('Date')
+plt.ylabel('Cumulative Return')
+plt.grid(True)
+plt.show()
