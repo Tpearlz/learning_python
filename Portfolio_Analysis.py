@@ -15,3 +15,13 @@ df_subset.index = dates
 
 # Printing the updated DataFrame
 print(df_subset)
+
+# Convert the stock price columns to numeric, coercing errors (non-numeric) to NaN
+df[['GE', 'JPM', 'MSFT', 'PG']] = df[['GE', 'JPM', 'MSFT', 'PG']].apply(pd.to_numeric, errors='coerce')
+
+# Calculate the percentage change (daily returns) for the stock price columns
+returns = df[['GE', 'JPM', 'MSFT', 'PG']].pct_change()
+
+# Print the daily returns
+print("\nDaily Returns:\n", returns)
+
