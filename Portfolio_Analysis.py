@@ -35,4 +35,7 @@ weights = np.array([0, 0.5, 0.25, 0.75])
 # Calculate mean daily return of each stock
 mean_daily_returns = returns.mean()
 
+# Portfolio return is weighted average of individual returns
+port_return = np.sum(mean_daily_returns * weights)
+print("\nPortfolio Return (daily average):", port_return)
 
