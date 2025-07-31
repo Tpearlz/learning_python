@@ -25,3 +25,10 @@ returns = df[['GE', 'JPM', 'MSFT', 'PG']].pct_change()
 # Print the daily returns
 print("\nDaily Returns:\n", returns)
 
+# Let's say our portfolio has:
+# - 0% in GE
+# - 50% in JPM
+# - 25% in MSFT
+# -75% in PG
+weights = np.array([0, 0.5, 0.25, 0.75])
+
