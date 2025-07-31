@@ -32,3 +32,7 @@ print("\nDaily Returns:\n", returns)
 # -75% in PG
 weights = np.array([0, 0.5, 0.25, 0.75])
 
+# Calculate mean daily return of each stock
+mean_daily_returns = returns.mean()
+
+
