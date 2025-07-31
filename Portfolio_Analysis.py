@@ -39,3 +39,7 @@ mean_daily_returns = returns.mean()
 port_return = np.sum(mean_daily_returns * weights)
 print("\nPortfolio Return (daily average):", port_return)
 
+# Add a 'Portfolio' column by multiplying weights
+# Deep copy for independent manipulation
+portfolio_returns = returns.copy(deep=True)
+portfolio_returns['Portfolio'] = portfolio_returns.dot(weights)
