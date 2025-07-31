@@ -43,3 +43,6 @@ print("\nPortfolio Return (daily average):", port_return)
 # Deep copy for independent manipulation
 portfolio_returns = returns.copy(deep=True)
 portfolio_returns['Portfolio'] = portfolio_returns.dot(weights)
+
+# Compounding the return over time gives cumulative return
+cumulative_returns = (1 + portfolio_returns).cumprod()
